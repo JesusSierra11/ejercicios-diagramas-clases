@@ -8,14 +8,13 @@
 
 En el original en la interfaz Pet, el metodo play() no tenía retorno, le he añadido el void.
 
-##Código:
-
-classDiagram
-Animal <|-- Cat : extends
-Animal <|-- Spider : extends
-Animal <|-- Fish : extends
-Pet <|.. Fish : implements
-Pet <|.. Cat :implements
+## Código:
+   classDiagram
+   Animal <|-- Cat : extends
+   Animal <|-- Spider : extends
+   Animal <|-- Fish : extends
+   Pet <|.. Fish : implements
+   Pet <|.. Cat :implements
    class Animal{
    <<abstract>>
    #legs : int
@@ -51,6 +50,7 @@ Pet <|.. Cat :implements
    +walk() void
    +eat() void
    }
+   
 **Imagén original**:
 
 ![](/imagenes/lectura.png)
