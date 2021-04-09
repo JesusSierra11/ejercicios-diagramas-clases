@@ -8,13 +8,14 @@
 
 En el original en la interfaz Pet, el metodo play() no tenía retorno, le he añadido el void.
 
+##Código:
 
-
-   Animal <|-- Cat : extends
-   Animal <|-- Spider : extends
-   Animal <|-- Fish : extends
-   Pet <|.. Fish : implements
-   Pet <|.. Cat :implements
+classDiagram
+Animal <|-- Cat : extends
+Animal <|-- Spider : extends
+Animal <|-- Fish : extends
+Pet <|.. Fish : implements
+Pet <|.. Cat :implements
    class Animal{
    <<abstract>>
    #legs : int
@@ -22,19 +23,16 @@ En el original en la interfaz Pet, el metodo play() no tenía retorno, le he añ
    +walk() void
    +eat() void
    }
-   
    class Pet{
    <<interface>>
    +getName() String
    +setName (n : String) void
    +play() void
    }
-   
    class Spider{
    +Spider()
    +eat() void
    }
-   
    class Cat{
    -name : String
    +Cat()
@@ -44,7 +42,6 @@ En el original en la interfaz Pet, el metodo play() no tenía retorno, le he añ
    +play() void
    +eat() void
    }
-   
    class Fish{
    -name : String
    +Fish()
@@ -54,7 +51,6 @@ En el original en la interfaz Pet, el metodo play() no tenía retorno, le he añ
    +walk() void
    +eat() void
    }
-         
 **Imagén original**:
 
 ![](/imagenes/lectura.png)
