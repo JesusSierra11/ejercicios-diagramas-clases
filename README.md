@@ -8,7 +8,7 @@
 
 En el original en la interfaz Pet, el metodo play() no tenía retorno, le he añadido el void.
 
-## Código: 
+
 
    Animal <|-- Cat : extends
    Animal <|-- Spider : extends
@@ -61,7 +61,7 @@ En el original en la interfaz Pet, el metodo play() no tenía retorno, le he añ
 En este diagrama he quitado el atributo item de tipo ReadingItem de la clase Customer porque al tener relación con ReadingItem, ya no le hace falta tenerlo a la clase Customer.
 En el método getName() de la clase ReadingItem, en la imagen original viene con el valor de retorno void y yo lo he cambiado y le he puesto que el valor de retorno es un String.
 Yo en la relación, he interpretado que el cliente compra 1 libro y los libros pueden ser comprados por muchos clientes.
-## Código:
+
 
  Customer"n"--<"1"ReadingItem:buy
  GstChargeable <|.. Encyclopedia
