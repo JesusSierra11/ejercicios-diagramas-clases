@@ -1,5 +1,5 @@
 # Ejercicios diagramas de clases
-**Imagén original**:
+**Imagen original**:
 
 ![](/imagenes/pet.jpg)
 
@@ -58,7 +58,7 @@ En el original en la interfaz Pet, el metodo play() no tenía retorno, le he añ
           +eat() void
           }
    
-**Imagén original**:
+**Imagen original**:
 
 ![](/imagenes/lectura.png)
 
