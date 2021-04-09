@@ -22,16 +22,19 @@ En el original en la interfaz Pet, el metodo play() no tenía retorno, le he añ
    +walk() void
    +eat() void
    }
+   
    class Pet{
    <<interface>>
    +getName() String
    +setName (n : String) void
    +play() void
    }
+   
    class Spider{
    +Spider()
    +eat() void
    }
+   
    class Cat{
    -name : String
    +Cat()
@@ -41,6 +44,7 @@ En el original en la interfaz Pet, el metodo play() no tenía retorno, le he añ
    +play() void
    +eat() void
    }
+   
    class Fish{
    -name : String
    +Fish()
