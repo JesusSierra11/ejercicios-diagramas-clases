@@ -9,7 +9,7 @@
 En el original en la interfaz Pet, el metodo play() no tenía retorno, le he añadido el void.
 
 ## Código: 
-   classDiagram
+
    Animal <|-- Cat : extends
    Animal <|-- Spider : extends
    Animal <|-- Fish : extends
@@ -63,13 +63,12 @@ En el método getName() de la clase ReadingItem, en la imagen original viene con
 Yo en la relación, he interpretado que el cliente compra 1 libro y los libros pueden ser comprados por muchos clientes.
 ## Código:
 
-classDiagram
-Customer"n"--<"1"ReadingItem:buy
-GstChargeable <|.. Encyclopedia
-GstChargeable <|.. Magazine
-ReadingItem <|-- Encyclopedia
-ReadingItem <|-- Magazine
-ReadingItem <|-- Book
+ Customer"n"--<"1"ReadingItem:buy
+ GstChargeable <|.. Encyclopedia
+ GstChargeable <|.. Magazine
+ ReadingItem <|-- Encyclopedia
+ ReadingItem <|-- Magazine
+ ReadingItem <|-- Book
  class Customer{
  -customerName : String
  -totalPay : double
